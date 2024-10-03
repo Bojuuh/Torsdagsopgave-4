@@ -14,5 +14,26 @@ class Main{
 
 		GameMenu gameMenu = new GameMenu(actions);
 		gameMenu.displayMenu();
+		String userChoice = gameMenu.getAction();
+		int action = Integer.parseInt(userChoice);
+		doAction(action);
 	}
+	public static void doAction(int action){
+		switch (action){
+			case 1:
+				System.out.println("Starting the game now");
+				break;
+			case 2: 
+				System.out.println("Fetching preaviously saved game data");
+				break;
+			case 3:
+				System.out.println("Game paused");
+				break;
+			case 4:
+				System.out.println("Ending game");
+				break;
+			default:
+				break;
+			}
+		}
 }

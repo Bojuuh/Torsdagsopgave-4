@@ -42,12 +42,13 @@ public class GuessANumber {
                 else{
                     System.out.println("Correct! You guessed the number");
                 }
+                }
 
             }
             else{
             System.out.println("Not a valid number. Enter a number between 1 and 100");
             makeAGuess();
-        }
+            }
         }
     }
 }
