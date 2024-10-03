@@ -28,7 +28,7 @@ public class GuessANumber {
         if (scanner.hasNextDouble()){
             double userGuess = scanner.nextDouble();
 
-            if (userGuess >= 1 && userGuess <= 100){ // checks if userGuess is between 1 and 100
+            if (userGuess >= 1 && userGuess <= 100){
                 int guess = (int) userGuess; // converts userGuess to int for comparison with rnd_number
 
                 if (guess < rnd_number){
